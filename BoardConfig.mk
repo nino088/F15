@@ -1,4 +1,4 @@
-COMMON_PATH := device/samsung/m15x
+DEVICE_PATH := device/samsung/m15x
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -95,6 +95,10 @@ BOARD_ROOT_EXTRA_FOLDERS := carrier data_mirror debug_ramdisk efs linkerconfig m
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_SURPRESS_SECURE_ERASE := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+BOARD_HAS_RECOVERY_PARTITION := true
+TARGET_NO_RECOVERY := false
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -109,6 +113,9 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 BOOT_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 14
+
+# Build Property
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Crypto
 #TW_INCLUDE_CRYPTO := true
