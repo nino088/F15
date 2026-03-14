@@ -5,18 +5,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
+ Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from m15x device
 $(call inherit-product, device/samsung/m15x/device.mk)
 
 PRODUCT_DEVICE := m15x
-PRODUCT_NAME := omni_m15x
+PRODUCT_NAME := twrp_m15x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-E156B
 PRODUCT_MANUFACTURER := samsung
