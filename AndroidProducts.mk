@@ -9,6 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_m15x.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_m15x-user \
-    twrp_m15x-userdebug \
     twrp_m15x-eng
