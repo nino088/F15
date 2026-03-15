@@ -15,6 +15,8 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from m15x device
 $(call inherit-product, device/samsung/m15x/device.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/m15x/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := m15x
 PRODUCT_NAME := twrp_m15x
 PRODUCT_BRAND := samsung
