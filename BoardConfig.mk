@@ -93,10 +93,6 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 # System as root
 BOARD_ROOT_EXTRA_FOLDERS := carrier data_mirror debug_ramdisk efs linkerconfig metadata odm_dlkm oem optics postinstall prism second_stage_resources spu system_ext  system_dlkm
 
-# PRODUCT_COPY_FILES directives.
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
-
 # touchscreen
 TW_LOAD_VENDOR_MODULES := "touch_boost.ko"
 
