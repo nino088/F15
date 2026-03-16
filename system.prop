@@ -1,3 +1,4 @@
-ro.display.series=Samsung Galaxy A16
+ro.display.series=Samsung Galaxy F15 5G
 ro.boot.dynamic_partitions=true
+ro.hardware=mt6835
 sys.usb.config=mtp
