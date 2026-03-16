@@ -17,6 +17,12 @@ $(call inherit-product, device/samsung/m15x/device.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/m15x/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := m15x
 PRODUCT_NAME := twrp_m15x
 PRODUCT_BRAND := samsung
