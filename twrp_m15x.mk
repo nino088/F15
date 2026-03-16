@@ -30,12 +30,3 @@ PRODUCT_MODEL := SM-E156B
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="m15xnndxx-user 13 TP1A.220624.014 E156BXXS5AYA1 release-keys"
-
-BUILD_FINGERPRINT := samsung/m15xnndxx/m15x:13/TP1A.220624.014/E156BXXS5AYA1:user/release-keys
-
-# Explicitly include critical recovery files (A14 crypto blobs and fstab)
-PRODUCT_COPY_FILES += \
-$(LOCAL_PATH)/recovery/root/system/etc/recovery.fstab:recovery/root/system/etc/recovery.fstab
