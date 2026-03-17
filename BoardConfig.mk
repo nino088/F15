@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/a16xm
+DEVICE_PATH := device/samsung/m15x
 
 # Display
 TARGET_SCREEN_DENSITY := 385
